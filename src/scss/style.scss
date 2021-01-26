@@ -1,9 +1,9 @@
 //Cria nosso tema
 $my-color-1: #00a1ff;
-$my-color-2: #e2711d;
+$my-color-2: #ff4400;
 $my-color-3: #ffcd8a;
 $my-color-4: #ffb627;
-$my-color-5: #e65f5c;
+$my-color-5: #ff0044;
 
 $theme-colors:(
 	"my-color-1": $my-color-1,
@@ -24,6 +24,11 @@ $link-color: $my-color-5;
 .size-thumbnail{
 	max-width: 100%;
 	height: auto;
+}
+
+::selection {
+    background-color:#ff0044;
+    color: white;
 }
 
 //importa o bootstrap

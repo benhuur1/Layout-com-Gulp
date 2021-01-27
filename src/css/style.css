@@ -10,6 +10,14 @@
   background-color: #ff0044;
   color: white; }
 
+#bg-top {
+  background-image: url(../img/background.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 70vh;
+  filter: blur(0.9px); }
+
 /*!
  * Bootstrap v4.5.3 (https://getbootstrap.com/)
  * Copyright 2011-2020 The Bootstrap Authors

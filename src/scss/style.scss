@@ -30,6 +30,15 @@ $link-color: $my-color-5;
     background-color:#ff0044;
     color: white;
 }
+#bg-top
+{
+	background-image: url(../img/background.jpg);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 70vh;
+	filter: blur(.9px);
+}
 
 //importa o bootstrap
 @import "node_modules/bootstrap/scss/bootstrap";

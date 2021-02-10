@@ -38,6 +38,13 @@ $link-color: $my-color-5;
 	background-repeat: no-repeat;
 	height: 70vh;
 }
+$enable-responsive-font-sizes:                true !default;
+p {
+	font-size: 1rem;
+	font-weight: 300; }
+	  @media (max-width: 1200px) {
+	  p, .lead {
+		font-size: calc(.8rem + 0.3vw) ; } }
 
 //importa o bootstrap
 @import "node_modules/bootstrap/scss/bootstrap";

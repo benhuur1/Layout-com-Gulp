@@ -1,0 +1,332 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+
+	<title>José Ben Hur | Web Developer</title>
+</head>
+<style>
+	.container-overlay
+	{
+		position: relative;
+		width: 100%;
+	}
+	.image
+	{
+		display: block;
+		width: 100%;
+		height: auto;
+	}
+	.overlay
+	{
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		height: 100%;
+		width: 100%;
+		opacity: 0;
+		transition: .5s ease;
+		background-color: rgba(0,0,0,0.7);
+	}
+	.container-overlay:hover .overlay
+	{
+		opacity: 1;
+	}
+	.text
+	{
+		font-size: 20px;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		-webkit-transform: translate(-50%, -50%);
+		-ms-transform: translate(-50%, -50%);
+		transform: translate(-50%, -50%);
+		text-align: center;
+	}
+	#blog-bg {
+		background-image: url(img/blog.jpg);
+		background-position: center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		height: 70vh; }
+	</style>
+	<body style="background-color: #FFF5F8;">
+		<nav class="navbar navbar-expand-lg navbar-dark rounded" style="background-color: #6f42c1;" id="nav">
+			<a href="#" class="navbar-brand">José Ben Hur</a>
+
+			<button class="navbar-toggler" type="button" data-toggle='collapse' data-target='#meuNavbar'>
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="collapse navbar-collapse" id="meuNavbar">
+				<ul class="navbar-nav ml-auto text-center">
+					<li class="nav-item">
+						<a href="mailto:joseben.hur.86@gmail.com" class="nav-link">
+							<i class="fas px-2 fa-2x fa-envelope"></i>
+						</a>
+					</li>
+					<li class="nav-item">
+						<a href="https://github.com/benhuur1" class="nav-link">
+							<i class="fab px-2 fa-2x fa-github"></i>
+						</a>
+					</li>
+					<li class="nav-item">
+						<a href="https://www.instagram.com/jose_benhur/" class="nav-link">
+							<i class="fab px-2 fa-2x fa-instagram"></i>
+						</a>
+					</li>
+					<li class="nav-item">
+						<a href="https://www.linkedin.com/in/josé-ben-hur-68aa13114/" class="nav-link">
+							<i class="fab fa-linkedin fa-2x"></i>
+						</a>
+					</li>
+				</ul>
+			</div>
+
+		</nav>
+
+		<div class="container-fluid">
+			<div class="row" id='blog-bg'>
+			</div>
+		</div>
+
+
+		<div class="bg-transparent py-5">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<h1 class="text-center py-5">Blog</h1>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-12 col-md-2 ml-1">
+						<ul class="navbar-nav bg-light p-2 flex-column">
+							<h4 class="font-weight-bold">Posts</h4>
+							<li class="nav-item"><a href="#" class="nav-link">Link 1</a></li>
+							<li class="nav-item"><a href="#" class="nav-link">Link 2</a></li>
+							<li class="nav-item"><a href="#" class="nav-link">Link 3</a></li>
+							<li class="nav-item"><a href="#" class="nav-link">Link 4</a></li>
+							<li class="nav-item"><a href="#" class="nav-link">Link 5</a></li>
+						</ul>
+					</div>
+					<div class="col-12 col-md-9 bg-white">
+						<div class="row">
+							<div class="col-6 col-sm-6 col-md-4 col-lg-3 pb-4">
+								<div class="card">
+									<div class="card-header">
+										<a href="#" class="card-title">Autor: José Ben Hur</a>
+									</div>
+									<img src="img/perfil.jpg" class="img-fluid">
+									<div class="card-body">
+										<h4 class="card-title">Titulo do Post</h4>
+										<p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing, elit. Porro vitae ipsam hic ratione ex repudiandae excepturi nam quisquam iusto perferendis.</p>
+										<a href="#" class="text-primary">Saiba mais...</a>
+									</div>
+									<div class="card-footer">
+										<span class="font-weight-bold">
+											Data:
+										</span>
+										<span class="badge badge-danger">20/03/2021</span>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-6 col-sm-6 col-md-4 col-lg-3 pb-4">
+								<div class="card shadow">
+									<div class="card-header">
+										<a href="#" class="card-title">Autor: José Ben Hur</a>
+									</div>
+									<img src="img/perfil.jpg" class="img-fluid">
+									<div class="card-body">
+										<h4 class="card-title">Titulo do Post</h4>
+										<p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing, elit. Porro vitae ipsam hic ratione ex repudiandae excepturi nam quisquam iusto perferendis.</p>
+										<a href="#" class="text-primary">Saiba mais...</a>
+									</div>
+									<div class="card-footer">
+										<span class="font-weight-bold">
+											Data:
+										</span>
+										<span class="badge badge-danger">20/03/2021</span>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-6 col-sm-6 col-md-4 col-lg-3 pb-4">
+								<div class="card shadow">
+									<div class="card-header">
+										<a href="#" class="card-title">Autor: José Ben Hur</a>
+									</div>
+									<img src="img/perfil.jpg" class="img-fluid">
+									<div class="card-body">
+										<h4 class="card-title">Titulo do Post</h4>
+										<p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing, elit. Porro vitae ipsam hic ratione ex repudiandae excepturi nam quisquam iusto perferendis.</p>
+										<a href="#" class="text-primary">Saiba mais...</a>
+									</div>
+									<div class="card-footer">
+										<span class="font-weight-bold">
+											Data:
+										</span>
+										<span class="badge badge-danger">20/03/2021</span>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-6 col-sm-6 col-md-4 col-lg-3 pb-4">
+								<div class="card shadow">
+									<div class="card-header">
+										<a href="#" class="card-title">Autor: José Ben Hur</a>
+									</div>
+									<img src="img/perfil.jpg" class="img-fluid">
+									<div class="card-body">
+										<h4 class="card-title">Titulo do Post</h4>
+										<p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing, elit. Porro vitae ipsam hic ratione ex repudiandae excepturi nam quisquam iusto perferendis.</p>
+										<a href="#" class="text-primary">Saiba mais...</a>
+									</div>
+									<div class="card-footer">
+										<span class="font-weight-bold">
+											Data:
+										</span>
+										<span class="badge badge-danger">20/03/2021</span>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-6 col-sm-6 col-md-4 col-lg-3 pb-4">
+								<div class="card shadow">
+									<div class="card-header">
+										<a href="#" class="card-title">Autor: José Ben Hur</a>
+									</div>
+									<img src="img/perfil.jpg" class="img-fluid">
+									<div class="card-body">
+										<h4 class="card-title">Titulo do Post</h4>
+										<p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing, elit. Porro vitae ipsam hic ratione ex repudiandae excepturi nam quisquam iusto perferendis.</p>
+										<a href="#" class="text-primary">Saiba mais...</a>
+									</div>
+									<div class="card-footer">
+										<span class="font-weight-bold">
+											Data:
+										</span>
+										<span class="badge badge-danger">20/03/2021</span>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-6 col-sm-6 col-md-4 col-lg-3 pb-4">
+								<div class="card shadow">
+									<div class="card-header">
+										<a href="#" class="card-title">Autor: José Ben Hur</a>
+									</div>
+									<img src="img/perfil.jpg" class="img-fluid">
+									<div class="card-body">
+										<h4 class="card-title">Titulo do Post</h4>
+										<p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing, elit. Porro vitae ipsam hic ratione ex repudiandae excepturi nam quisquam iusto perferendis.</p>
+										<a href="#" class="text-primary">Saiba mais...</a>
+									</div>
+									<div class="card-footer">
+										<span class="font-weight-bold">
+											Data:
+										</span>
+										<span class="badge badge-danger">20/03/2021</span>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-6 col-sm-6 col-md-4 col-lg-3 pb-4">
+								<div class="card shadow">
+									<div class="card-header">
+										<a href="#" class="card-title">Autor: José Ben Hur</a>
+									</div>
+									<img src="img/perfil.jpg" class="img-fluid">
+									<div class="card-body">
+										<h4 class="card-title">Titulo do Post</h4>
+										<p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing, elit. Porro vitae ipsam hic ratione ex repudiandae excepturi nam quisquam iusto perferendis.</p>
+										<a href="#" class="text-primary">Saiba mais...</a>
+									</div>
+									<div class="card-footer">
+										<span class="font-weight-bold">
+											Data:
+										</span>
+										<span class="badge badge-danger">20/03/2021</span>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-6 col-sm-6 col-md-4 col-lg-3 pb-4">
+								<div class="card shadow">
+									<div class="card-header">
+										<a href="#" class="card-title">Autor: José Ben Hur</a>
+									</div>
+									<img src="img/perfil.jpg" class="img-fluid">
+									<div class="card-body">
+										<h4 class="card-title">Titulo do Post</h4>
+										<p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing, elit. Porro vitae ipsam hic ratione ex repudiandae excepturi nam quisquam iusto perferendis.</p>
+										<a href="#" class="text-primary">Saiba mais...</a>
+									</div>
+									<div class="card-footer">
+										<span class="font-weight-bold">
+											Data:
+										</span>
+										<span class="badge badge-danger">20/03/2021</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="w-100 border-top border-dark mt-5" style="background-color: #6f42c1;" id="footer">
+			<div class="container">
+				<div class="row">
+					<div class="col py-5 text-center text-white">
+						<h5>Devenvolvido por José Ben Hur</h5>
+						<p class='mb-0'>Feito por mim com muita dedicação</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<nav class="navbar navbar-expand-lg navbar-dark rounded bg-success fixed-bottom" id="navFooter">
+			<div class="container d-flex align-items-center justify-content-center">
+				<ul class="navbar-nav text-center">
+					<li class="nav-item">
+						<a href="index.html" class="nav-link">
+							HOME
+						</a>
+					</li>
+					<li class="nav-item">
+						<a href="blog.html" class="nav-link">
+							BLOG
+						</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+
+
+
+
+
+		<!-- Optional JavaScript; choose one of the two! -->
+		<!-- Option 2: jQuery, Popper.js, and Bootstrap JS -->
+		<script src="js/jquery.js"></script>
+		<script src="js/popper.js"></script>
+		<script src="js/bootstrap.js"></script>
+
+		<script>
+			let nav = document.querySelector('#navFooter').clientHeight;
+			let footer = document.getElementById('footer');
+			footer.style.marginBottom = nav+"px";
+		</script>
+	</body>
+	</html>

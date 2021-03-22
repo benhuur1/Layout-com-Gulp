@@ -12,32 +12,83 @@
 
 	<title>José Ben Hur | Web Developer</title>
 </head>
-<body class="bg-light">
+<style>
+	.container-overlay
+	{
+		position: relative;
+		width: 100%;
+	}
+	.image
+	{
+		display: block;
+		width: 100%;
+		height: auto;
+	}
+	.overlay
+	{
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		height: 100%;
+		width: 100%;
+		opacity: 0;
+		transition: .5s ease;
+		background-color: rgba(0,0,0,0.7);
+	}
+	.container-overlay:hover .overlay
+	{
+		opacity: 1;
+	}
+	.text
+	{
+		font-size: 20px;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		-webkit-transform: translate(-50%, -50%);
+		-ms-transform: translate(-50%, -50%);
+		transform: translate(-50%, -50%);
+		text-align: center;
+	}
+</style>
+<body style="background-color: #FFF5F8;">
+	<nav class="navbar navbar-expand-lg navbar-dark rounded" style="background-color: #6f42c1;" id="nav">
+		<a href="#" class="navbar-brand">José Ben Hur</a>
+
+		<button class="navbar-toggler" type="button" data-toggle='collapse' data-target='#meuNavbar'>
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<div class="collapse navbar-collapse" id="meuNavbar">
+			<ul class="navbar-nav ml-auto text-center">
+				<li class="nav-item">
+					<a href="mailto:joseben.hur.86@gmail.com" class="nav-link">
+						<i class="fas px-2 fa-2x fa-envelope"></i>
+					</a>
+				</li>
+				<li class="nav-item">
+					<a href="https://github.com/benhuur1" class="nav-link">
+						<i class="fab px-2 fa-2x fa-github"></i>
+					</a>
+				</li>
+				<li class="nav-item">
+					<a href="https://www.instagram.com/jose_benhur/" class="nav-link">
+						<i class="fab px-2 fa-2x fa-instagram"></i>
+					</a>
+				</li>
+				<li class="nav-item">
+					<a href="https://www.linkedin.com/in/josé-ben-hur-68aa13114/" class="nav-link">
+						<i class="fab fa-linkedin fa-2x"></i>
+					</a>
+				</li>
+			</ul>
+		</div>
+
+	</nav>
 
 	<div class="container">
-
-		<div class="row">
-
-			<div class="col mb-5">
-				<nav class="navbar navbar-expand-lg navbar-dark bg-my-color-2 rounded fixed-top" id="nav">
-					<a href="#" class="navbar-brand">José Ben Hur</a>
-
-					<button class="navbar-toggler" type="button" data-toggle='collapse' data-target='#meuNavbar'>
-						<span class="navbar-toggler-icon"></span>
-					</button>
-
-					<div class="collapse navbar-collapse" id="meuNavbar">
-						<ul class="navbar-nav ml-auto">
-							<li class="nav-item"><a href="#" class="nav-link">Inicío</a></li>
-							<li class="nav-item"><a href="#" class="nav-link">Sobre</a></li>
-							<li class="nav-item"><a href="#" class="nav-link">Contato</a></li>
-						</ul>
-					</div>
-
-				</nav>
-			</div>
-
-		</div>
 		
 		<div class="row" id='bg-top'>
 
@@ -49,11 +100,11 @@
 				<div class="border-transparent" style="background: rgba( 255,255,255, 0);">
 					<center><img src="img/perfil.jpg" alt="Mão usando o celular"  class="card-img-top rounded-circle" style="width: 200px!important" ></center>
 					<div class="card-body text-center">
-						<h2>
-							José Ben Hur de Andrade Paes
+						<h2 class="display-4 font-weight-bolder">
+							José Ben Hur
 						</h2>
-						<p class="text-muted lead">
-							Analista de TI e desenvolvedor web
+						<p class="text-muted font-weight-bolder font-italic lead">
+							Analista de TI e Desenvolvedor Web <a href="https://adlux.com.br/">@ Adlux</a>
 						</p>
 
 						<h2 class="card-title mb-4 font-weight-bold">
@@ -62,24 +113,25 @@
 						<a href="mailto:joseben.hur.86@gmail.com"><i class="fas px-2 fa-2x fa-envelope"></i></a>
 						<a href="https://github.com/benhuur1"><i class="fab px-2 fa-2x fa-github"></i></a>
 						<a href="https://www.instagram.com/jose_benhur/"><i class="fab px-2 fa-2x fa-instagram"></i></a>
+						<a href="https://www.linkedin.com/in/josé-ben-hur-68aa13114/"><i class="fab fa-linkedin fa-2x"></i></a>
 					</div>
 				</div>
 			</div>
 
 			<div class="col-12">
 
-				<div class="jumbotron jumbotron-fluid shadow-lg">
+				<div class="jumbotron jumbotron-fluid bg-white shadow-lg">
 					<div class="container">
-					  <h2 class="display-4 font-weight-bold">Sobre</h2>
-					  <hr>
-					  <p class="lead" style="color: black;">Olá! Meu nome é José, tenho 34 anos  e sou formado em informática para internet pela Etec Sales Gomes (Tatuí - 2019), e atualmente estou cursando Gestão de Tecnologia da informação pela Faculdade de Tecnologia de Tatuí (2022).</p>
-					  <p class="lead ">
-						  Trabalho <span class="font-weight-bold" style="font-style: italic;">Analista de TI</span> em uma conceituada empresa
-					  </p>
-					</div>
-				  </div>
-				  
+						<h2 class="display-4 font-weight-bold">Sobre</h2>
+						<hr>
+						<p class="lead" style="color: black;">Olá! Meu nome é José, tenho 34 anos  e sou formado em Informática para Internet pela Etec Sales Gomes (Tatuí - 2019). Atualmente estou cursando Gestão de Tecnologia da Informação pela Faculdade de Tecnologia de Tatuí (2022).</p>
+						<p class="lead ">
+							Trabalho como <span class="font-weight-bold" style="font-style: italic;">Analista de TI</span> em uma conceituada empresa realizando criação de landing pages, gerenciamento de um e-commerce, customização nas páginas de loja on-line, gerenciamento de um ERP, dentre outros serviços na área da tecnologia. <a href="mailto:joseben.hur.86@gmail.com">saíba mais...</a>
+						</p>
+					</div> 
 				</div>
+
+			</div>
 
 		</div>
 
@@ -92,10 +144,10 @@
 					Skills
 				</h2>
 			</div>
-			<div class="col-6 col-md-4 col-lg-3 ">
+			<div class="col-6 col-md-4 py-2 ">
 				<div class="card">
 					<div class="card-header bg-white">
-						<h3 class="card-title text-center">PHP</h3>
+						<h5 class="card-title text-center font-weight-bold" style="font-style: italic;">PHP</h5>
 					</div>
 					<div class="card-body text-center">
 						<i class="fab fa-php fa-7x"  style='color: #7377ad;'></i>
@@ -103,15 +155,15 @@
 					<div class="card-footer bg-white">
 						<div class="progress">
 							<div class="progress-bar" role="progressbar" style="width: 34%; background-color: #7377ad;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
-						  </div>
+						</div>
 					</div>
 				</div>
 			</div>
 
-			<div class="col-6 col-md-4 col-lg-3 ">
+			<div class="col-6 col-md-4 py-2 ">
 				<div class="card shadow-sm">
 					<div class="card-header bg-white">
-						<h3 class="card-title text-center">WordPress</h3>
+						<h5 class="card-title text-center font-weight-bold" style="font-style: italic;" >WordPress</h5>
 					</div>
 					<div class="card-body text-center">
 						<i class="fab fa-wordpress fa-7x"  style='color:#00749a'></i>
@@ -119,15 +171,15 @@
 					<div class="card-footer bg-white">
 						<div class="progress">
 							<div class="progress-bar" role="progressbar" style="width: 67%; background-color: #00749a;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
-						  </div>
+						</div>
 					</div>
 				</div>
 			</div>
 
-			<div class="col-6 col-md-4 col-lg-3 ">
+			<div class="col-6 col-md-4 py-2 ">
 				<div class="card shadow-sm">
 					<div class="card-header bg-white">
-						<h3 class="card-title text-center">WooCommerce</h3>
+						<h5 class="card-title text-center font-weight-bold" style="font-style: italic;">WooCommerce</h5>
 					</div>
 					<div class="card-body text-center">
 						<img src="img/woocommerce.svg" width="120" alt="">
@@ -135,34 +187,122 @@
 					<div class="card-footer bg-white">
 						<div class="progress">
 							<div class="progress-bar" role="progressbar" style="width: 77%; background-color: #9b5c8f;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
-						  </div>
+						</div>
 					</div>
 				</div>
 			</div>
-			
+
+			<div class="col-6 col-md-4 py-2 ">
+				<div class="card shadow-sm">
+					<div class="card-header bg-white">
+						<h5 class="card-title text-center font-italic font-weight-bold ">HTML5</h5>
+					</div>
+					<div class="card-body text-center">
+						<i class="fab fa-html5 text-primary fa-7x"></i>
+					</div>
+					<div class="card-footer bg-white">
+						<div class="progress">
+							<div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-6 col-md-4 py-2 ">
+				<div class="card shadow-sm">
+					<div class="card-header bg-white">
+						<h5 class="card-title text-center font-italic font-weight-bold ">CSS3</h5>
+					</div>
+					<div class="card-body text-center">
+						<i class="fab fa-css3-alt  fa-7x" style="color: #30ace0;"></i>
+					</div>
+					<div class="card-footer bg-white">
+						<div class="progress">
+							<div class="progress-bar" role="progressbar" style="width: 80%; background-color: #30ace0;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-6 col-md-4 py-2 ">
+				<div class="card shadow-sm">
+					<div class="card-header bg-white">
+						<h5 class="card-title text-center font-italic font-weight-bold ">Bootstrap 4</h5>
+					</div>
+					<div class="card-body text-center">
+						<i class="fab fa-bootstrap fa-7x" style="color: #7b11f8;"></i>
+					</div>
+					<div class="card-footer bg-white">
+						<div class="progress">
+							<div class="progress-bar" role="progressbar" style="width: 80%; background-color: #7b11f8;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+						</div>
+					</div>
+				</div>
+			</div>
 
 		</div>
 
-	</div>
+		<div class="row">
+			<div class="col-12">
+				<h2 class="display-4 font-weight-bold text-center py-5">
+					Portifólio
+				</h2>
+			</div>
 
-	<div class="w-100 bg-my-color-2 border-top border-dark mt-5">
-		<div class="container">
-			<div class="row">
-				<div class="col py-5 text-center text-white">
-					<h5>Devenvolvido por José Ben Hur</h5>
-					<p class='mb-0'>Feito por mim com muita dedicação</p>
+			<div class="container-overlay">
+				<img src="img/portifolio-1.png" alt="Print Página Web" class="image" style="width: 100%;">
+				<div class="overlay">
+					<div class="text"><a class="btn btn-light btn-lg"  href="https://adlux.com.br/cd/">Confira!</a></div>
 				</div>
 			</div>
 		</div>
+	</div> 
+
+</div>
+
+<div class="w-100 border-top border-dark mt-5" style="background-color: #6f42c1;" id="footer">
+	<div class="container">
+		<div class="row">
+			<div class="col py-5 text-center text-white">
+				<h5>Devenvolvido por José Ben Hur</h5>
+				<p class='mb-0'>Feito por mim com muita dedicação</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+<nav class="navbar navbar-expand-lg navbar-dark rounded bg-dark fixed-bottom" id="navFooter">
+	<div class="container d-flex align-items-center justify-content-center">
+			<ul class="navbar-nav text-center">
+				<li class="nav-item">
+					<a href="index.html" class="nav-link">
+						HOME
+					</a>
+				</li>
+				<li class="nav-item">
+					<a href="blog.html" class="nav-link">
+						BLOG
+					</a>
+				</li>
+			</ul>
 	</div>
 
+</nav>
 
 
 
-	<!-- Optional JavaScript; choose one of the two! -->
-	<!-- Option 2: jQuery, Popper.js, and Bootstrap JS -->
-	<script src="js/jquery.js"></script>
-	<script src="js/popper.js"></script>
-	<script src="js/bootstrap.js"></script>
+
+
+
+<!-- Optional JavaScript; choose one of the two! -->
+<!-- Option 2: jQuery, Popper.js, and Bootstrap JS -->
+<script src="js/jquery.js"></script>
+<script src="js/popper.js"></script>
+<script src="js/bootstrap.js"></script>
+<script>
+let nav = document.querySelector('#navFooter').clientHeight;
+let footer = document.getElementById('footer');
+footer.style.marginBottom = nav+"px";
+</script>	
 </body>
 </html>

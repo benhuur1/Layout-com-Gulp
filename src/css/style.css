@@ -29,8 +29,8 @@ p {
  * Bootstrap v4.6.0 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors
  * Copyright 2011-2021 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
- */
+ * Licensed under MIT (https://githubcom/twbs/bootstrap/blob/main/LICENSE)
+ */.
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
@@ -58,6 +58,7 @@ p {
   --my-color-3: #ffcd8a;
   --my-color-4: #ffb627;
   --my-color-5: #ff0044;
+  --my-color-6: #0071e3;
   --breakpoint-xs: 0;
   --breakpoint-sm: 576px;
   --breakpoint-md: 768px;
@@ -1444,6 +1445,23 @@ pre {
   .table-hover .table-my-color-5:hover > th {
     background-color: #ff9fb8; }
 
+.table-my-color-6,
+.table-my-color-6 > th,
+.table-my-color-6 > td {
+  background-color: #b8d7f7; }
+
+.table-my-color-6 th,
+.table-my-color-6 td,
+.table-my-color-6 thead th,
+.table-my-color-6 tbody + tbody {
+  border-color: #7ab5f0; }
+
+.table-hover .table-my-color-6:hover {
+  background-color: #a1caf4; }
+  .table-hover .table-my-color-6:hover > td,
+  .table-hover .table-my-color-6:hover > th {
+    background-color: #a1caf4; }
+
 .table-active,
 .table-active > th,
 .table-active > td {
@@ -2256,6 +2274,32 @@ fieldset:disabled a.btn {
     .show > .btn-my-color-5.dropdown-toggle:focus {
       box-shadow: 0 0 0 0.2rem rgba(255, 38, 96, 0.5); }
 
+.btn-my-color-6 {
+  color: #fff;
+  background-color: #0071e3;
+  border-color: #0071e3; }
+  .btn-my-color-6:hover {
+    color: #fff;
+    background-color: #005ebd;
+    border-color: #0058b0; }
+  .btn-my-color-6:focus, .btn-my-color-6.focus {
+    color: #fff;
+    background-color: #005ebd;
+    border-color: #0058b0;
+    box-shadow: 0 0 0 0.2rem rgba(38, 134, 231, 0.5); }
+  .btn-my-color-6.disabled, .btn-my-color-6:disabled {
+    color: #fff;
+    background-color: #0071e3;
+    border-color: #0071e3; }
+  .btn-my-color-6:not(:disabled):not(.disabled):active, .btn-my-color-6:not(:disabled):not(.disabled).active,
+  .show > .btn-my-color-6.dropdown-toggle {
+    color: #fff;
+    background-color: #0058b0;
+    border-color: #0051a3; }
+    .btn-my-color-6:not(:disabled):not(.disabled):active:focus, .btn-my-color-6:not(:disabled):not(.disabled).active:focus,
+    .show > .btn-my-color-6.dropdown-toggle:focus {
+      box-shadow: 0 0 0 0.2rem rgba(38, 134, 231, 0.5); }
+
 .btn-outline-primary {
   color: #007bff;
   border-color: #007bff; }
@@ -2528,6 +2572,27 @@ fieldset:disabled a.btn {
     .btn-outline-my-color-5:not(:disabled):not(.disabled):active:focus, .btn-outline-my-color-5:not(:disabled):not(.disabled).active:focus,
     .show > .btn-outline-my-color-5.dropdown-toggle:focus {
       box-shadow: 0 0 0 0.2rem rgba(255, 0, 68, 0.5); }
+
+.btn-outline-my-color-6 {
+  color: #0071e3;
+  border-color: #0071e3; }
+  .btn-outline-my-color-6:hover {
+    color: #fff;
+    background-color: #0071e3;
+    border-color: #0071e3; }
+  .btn-outline-my-color-6:focus, .btn-outline-my-color-6.focus {
+    box-shadow: 0 0 0 0.2rem rgba(0, 113, 227, 0.5); }
+  .btn-outline-my-color-6.disabled, .btn-outline-my-color-6:disabled {
+    color: #0071e3;
+    background-color: transparent; }
+  .btn-outline-my-color-6:not(:disabled):not(.disabled):active, .btn-outline-my-color-6:not(:disabled):not(.disabled).active,
+  .show > .btn-outline-my-color-6.dropdown-toggle {
+    color: #fff;
+    background-color: #0071e3;
+    border-color: #0071e3; }
+    .btn-outline-my-color-6:not(:disabled):not(.disabled):active:focus, .btn-outline-my-color-6:not(:disabled):not(.disabled).active:focus,
+    .show > .btn-outline-my-color-6.dropdown-toggle:focus {
+      box-shadow: 0 0 0 0.2rem rgba(0, 113, 227, 0.5); }
 
 .btn-link {
   font-weight: 400;
@@ -4125,6 +4190,16 @@ input[type="button"].btn-block {
     outline: 0;
     box-shadow: 0 0 0 0.2rem rgba(255, 0, 68, 0.5); }
 
+.badge-my-color-6 {
+  color: #fff;
+  background-color: #0071e3; }
+  a.badge-my-color-6:hover, a.badge-my-color-6:focus {
+    color: #fff;
+    background-color: #0058b0; }
+  a.badge-my-color-6:focus, a.badge-my-color-6.focus {
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(0, 113, 227, 0.5); }
+
 .jumbotron {
   padding: 2rem 1rem;
   margin-bottom: 2rem;
@@ -4278,6 +4353,15 @@ input[type="button"].btn-block {
     border-top-color: #ff9fb8; }
   .alert-my-color-5 .alert-link {
     color: #520016; }
+
+.alert-my-color-6 {
+  color: #003b76;
+  background-color: #cce3f9;
+  border-color: #b8d7f7; }
+  .alert-my-color-6 hr {
+    border-top-color: #a1caf4; }
+  .alert-my-color-6 .alert-link {
+    color: #002243; }
 
 @keyframes progress-bar-stripes {
   from {
@@ -4610,6 +4694,17 @@ input[type="button"].btn-block {
     color: #fff;
     background-color: #850023;
     border-color: #850023; }
+
+.list-group-item-my-color-6 {
+  color: #003b76;
+  background-color: #b8d7f7; }
+  .list-group-item-my-color-6.list-group-item-action:hover, .list-group-item-my-color-6.list-group-item-action:focus {
+    color: #003b76;
+    background-color: #a1caf4; }
+  .list-group-item-my-color-6.list-group-item-action.active {
+    color: #fff;
+    background-color: #003b76;
+    border-color: #003b76; }
 
 .close {
   float: right;
@@ -5345,6 +5440,14 @@ button.bg-my-color-5:hover,
 button.bg-my-color-5:focus {
   background-color: #cc0036 !important; }
 
+.bg-my-color-6 {
+  background-color: #0071e3 !important; }
+
+a.bg-my-color-6:hover, a.bg-my-color-6:focus,
+button.bg-my-color-6:hover,
+button.bg-my-color-6:focus {
+  background-color: #0058b0 !important; }
+
 .bg-white {
   background-color: #fff !important; }
 
@@ -5419,6 +5522,9 @@ button.bg-my-color-5:focus {
 
 .border-my-color-5 {
   border-color: #ff0044 !important; }
+
+.border-my-color-6 {
+  border-color: #0071e3 !important; }
 
 .border-white {
   border-color: #fff !important; }
@@ -7709,6 +7815,12 @@ a.text-my-color-4:hover, a.text-my-color-4:focus {
 
 a.text-my-color-5:hover, a.text-my-color-5:focus {
   color: #b30030 !important; }
+
+.text-my-color-6 {
+  color: #0071e3 !important; }
+
+a.text-my-color-6:hover, a.text-my-color-6:focus {
+  color: #004b97 !important; }
 
 .text-body {
   color: #212529 !important; }

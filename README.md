@@ -15,4 +15,30 @@
 1. abre a pasta do projeto no editor de código
 1. cria uma pasta chamada `src`
 1. dentro dessa pasta cria 1 pasta `css`, 1 pasta `js`, 1 pasta `scss`, e 1 pasta `img`
-1. 
+1. Cria um arquivo `index.html` e coloca o código a seguir:
+```
+<!doctype html>
+<html lang="pt-br">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+
+	<title>`Template de Site com Bootstrap</title>
+</head>
+<body>
+
+
+<!-- Optional JavaScript; choose one of the two! -->
+<!-- Option 2: jQuery, Popper.js, and Bootstrap JS -->
+<script src="js/jquery.js"></script>
+<script src="js/popper.js"></script>
+<script src="js/bootstrap.js"></script>	
+</body>
+</html>
+```

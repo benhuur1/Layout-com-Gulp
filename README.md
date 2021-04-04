@@ -41,6 +41,7 @@
 <script src="js/bootstrap.js"></script>	
 </body>
 </html>
+```
 
 1. Em seguida você volta a pasta raiz do projeto e cria o arquivo `gulpfile.js` e coloca o código a seguir:
 

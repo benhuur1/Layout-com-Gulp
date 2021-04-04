@@ -10,4 +10,9 @@
 1. criar 1 pasta com o nome do projeto
 1. abrir a pasta no prompt de comando
 1. `npm init -y` para dar os nomes padrão ´para os pacotes
-1. Em seguida o comando: `npm install gulp browser-sync gulp-sass --save-dev`  
+1. Em seguida o comando: `npm install gulp browser-sync gulp-sass --save-dev`
+1. npm install bootstrap jquery popper.js --save-dev
+1. abre a pasta do projeto no editor de código
+1. cria uma pasta chamada `src`
+1. dentro dessa pasta cria 1 pasta `css`, 1 pasta `js`, 1 pasta `scss`, e 1 pasta `img`
+1. 

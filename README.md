@@ -84,4 +84,4 @@ gulp.task('default', gulp.series( ['js', 'server']));
 ```
 1. Estes são os primeiros passos para criação do seu projeto utilizando gulp, sass e bootstrap.
 
-1. De agora em diante você pode acompanhar o desenvolvimento através do meu canal no youtube [https://www.youtube.com/channel/UC9g1r5RsqGve7Aj1hEcfj-A](https://www.youtube.com/channel/UC9g1r5RsqGve7Aj1hEcfj-A):
+1. De agora em diante você pode acompanhar o desenvolvimento através do meu canal no youtube [https://www.youtube.com/channel/UC9g1r5RsqGve7Aj1hEcfj-A](https://www.youtube.com/channel/UC9g1r5RsqGve7Aj1hEcfj-A)

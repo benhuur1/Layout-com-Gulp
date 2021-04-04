@@ -6,7 +6,7 @@
 1. node.js
 1. npm 
 1. abrir o `CMD`
-1. 1. instalar o gulp com o comando `npm install --global gulp-cli `
+1. instalar o gulp com o comando `npm install --global gulp-cli `
 1. criar 1 pasta com o nome do projeto
 1. abrir a pasta no prompt de comando
 1. `npm init -y` para dar os nomes padrão ´para os pacotes

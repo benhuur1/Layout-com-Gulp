@@ -15,7 +15,8 @@
 1. abre a pasta do projeto no editor de código
 1. cria uma pasta chamada `src`
 1. dentro dessa pasta cria 1 pasta `css`, 1 pasta `js`, 1 pasta `scss`, e 1 pasta `img`
-1. Cria um arquivo `index.html` e coloca o código a seguir:
+1. Cria um arquivo `index.html` e coloca o código a seguir: 
+1. ou você poderá ver a vídeo aula que eu explico o passo a passo através do youtube nesse link:  [https://benhuur1.github.io/Site/](https://benhuur1.github.io/Site/):
 ```
 <!doctype html>
 <html lang="pt-br">

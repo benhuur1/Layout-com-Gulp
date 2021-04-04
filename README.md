@@ -1,7 +1,7 @@
 # Layout com Gulp
  Layout de WebSite com SASS, Browser-Sinc, Bootsratp 4.5.3 & GULP
 
-##requisitos para montar um layout com sass e gulp
+## requisitos para montar um layout com sass e gulp
 
 1. node.js
 1. npm 

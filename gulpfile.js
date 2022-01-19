@@ -1,6 +1,6 @@
 var gulp = require('gulp');
 var browsersync = require('browser-sync').create();
-var sass = require('gulp-sass');
+var sass = require('gulp-sass')(require('sass'));
 
 //Compilar o Sass
 gulp.task('sass',gulp.series( function() {

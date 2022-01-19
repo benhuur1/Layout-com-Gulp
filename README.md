@@ -49,15 +49,17 @@
 ```
 var gulp = require('gulp');
 var browsersync = require('browser-sync').create();
-var sass = require('gulp-sass');
+var sass = require('gulp-sass')(require('sass'));
 
 //Compilar o Sass
 gulp.task('sass',gulp.series( function() {
     return gulp.src(['node_modules/bootstrap/scss/bootstrap.scss', 'src/scss/*.scss'])
         .pipe(sass())
+        // .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
         .pipe(gulp.dest("src/css"))
         .pipe(browsersync.stream());
-    }));
+
+}));
 
 //mover js para src.js
 gulp.task('js',gulp.series( function() {
